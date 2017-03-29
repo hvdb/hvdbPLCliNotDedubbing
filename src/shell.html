@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="cliError-app/cliError-app.html">
+
+<dom-module id="cliError">
+    <template>
+        <style>
+            :host {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #fafafa;
+            }
+        </style>
+
+        <cliError-app></cliError-app>
+
+    </template>
+
+    <script>
+        Polymer({
+            is: 'cliError',
+            properties: {
+                loading: Boolean,
+                loggedIn: Boolean
+            }
+        });
+    </script>
+</dom-module>

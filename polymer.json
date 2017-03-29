@@ -1,0 +1,28 @@
+{
+    "entrypoint": "index.html",
+    "shell": "src/shell.html",
+    "sources": [
+        "assets/**/*",
+        "bower.json"
+    ],
+    "extraDependencies": [
+        "manifest.json",
+        "bower_components/webcomponentsjs/webcomponents-lite.min.js"
+    ],
+    "builds": [
+        {
+            "name": "bundled",
+            "bundle": true,
+            "js": {
+                "minify": true,
+                "compile": true
+            },
+            "css": {
+                "minify": true
+            },
+            "html": {
+                "minify": true
+            }
+        }
+    ]
+}
